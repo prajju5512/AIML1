@@ -13,3 +13,7 @@ print(data.fillna(method='bfill'))
 print(data.replace(to_replace=np.nan,value=51))
 print(data.dropna())
 print(data.dropna(how="all"))
+print("the max size = ",data['firstscore'].max())
+print("the min size = ",data['firstscore'].min())
+print(data.agg(['sum','min','max']))
+
