@@ -1,0 +1,32 @@
+# all graphs
+import pandas as pd
+import numpy as p
+import matplotlib.pyplot as plt
+data = pd.read_csv("C:/Users/SPTINT-01/Desktop/p/tips.csv")
+print(data)
+plt.xlabel('day')
+plt.ylabel('tips')
+plt.title('scatter graph')
+plt.scatter(data['day'],data['tip'])
+plt.show()
+plt.xlabel('tips')
+plt.ylabel('size')
+plt.title('line graph')
+plt.plot(data['tip'])
+plt.show()
+plt.xlabel('tips')
+plt.ylabel('size')
+plt.title('line graph')
+plt.plot(data['size'])
+plt.show()
+plt.xlabel('day')
+plt.ylabel('tips')
+plt.title('bar graph')
+plt.bar(data['day'],data['tip'])
+plt.show()
+plt.xlabel('range')
+plt.ylabel('totalbill')
+plt.title('histogram graph')
+plt.hist(data['total_bill'])
+plt.show()
+
